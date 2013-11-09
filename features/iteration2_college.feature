@@ -9,7 +9,7 @@ Background: I am on the college requirements page
 	Then I should see "Reading & Composition Requirements"
 	Then I should see "Quantitative Reasoning Requirements"
 	Then I should see "Foreign Language Requirements"
-	Then I should see "Breath Requirements"
+	Then I should see "Seven Breath Requirements"
 
 Scenario: fulfill R&C requirements 
 
@@ -60,16 +60,7 @@ Scenario: fulfill Biological Science requirements
 	When I uncheck the "Biological Science Satisfied" checkbox
 	And I press "Save"
 	Then I should see "You have not completed your Biological Science requirements"
-
 	
-Scenario: fulfill Biological Science requirements
-	When I check the "Biological Science Satisfied" checkbox
-	And I press "Save"
-	Then I should see "You have completed your Biological Science requirements"
-
-	When I uncheck the "Biological Science Satisfied" checkbox
-	And I press "Save"
-	Then I should see "You have not completed your Biological Science requirements"
 	
 Scenario: fulfill Historical Studies requirements
 	When I check the "Historical Studies Satisfied" checkbox

@@ -6,6 +6,12 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   config.secret_key = 'ceb45ba2139b65cef03dde19daf1e340a4ebb5030dbe2e9fc3cdd32fa787eef7ef177dc544f268173fd8ef2b54acca056907c603b665a708fb2153f06ebcf703'
 
+  config.authentication_keys = [ :login ]
+
+  config.reset_password_keys = [ :login ]
+
+  config.confirmation_keys = [ :login ]
+
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
